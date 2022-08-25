@@ -25,7 +25,7 @@ export default function Header() {
 
           <div className={styles.Menu}>
             <div className={styles.Next}>
-              <Link to="/" className={styles.Link}>
+              <Link to="/Login" className={styles.Link}>
                 <span className={styles.Title}>Hello, User</span>
                 <span className={styles.SmallTitle}>
                   <b>Sign In</b>
