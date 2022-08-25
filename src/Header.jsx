@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { HiShoppingCart } from "react-icons/hi";
 import { AiOutlineSearch } from "react-icons/ai";
 import { RiMapPin2Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -24,16 +25,20 @@ export default function Header() {
 
           <div className={styles.Menu}>
             <div className={styles.Next}>
-              <span className={styles.Title}>Hello, User</span>
-              <span className={styles.SmallTitle}>
-                <b>Sign In</b>
-              </span>
+              <Link to="/" className={styles.Link}>
+                <span className={styles.Title}>Hello, User</span>
+                <span className={styles.SmallTitle}>
+                  <b>Sign In</b>
+                </span>
+              </Link>
             </div>
             <div className={styles.Next}>
-              <span className={styles.Title}>Return</span>
-              <span className={styles.SmallTitle}>
-                <b>Orders</b>
-              </span>
+              <Link to="/" className={styles.Link}>
+                <span className={styles.Title}>Return</span>
+                <span className={styles.SmallTitle}>
+                  <b>Orders</b>
+                </span>
+              </Link>
             </div>
             <div className={styles.Next}>
               <span className={styles.Title}>Try</span>
