@@ -104,3 +104,8 @@
   .ImgWrap{
     display: inline-block;
   }
+
+  .Link{
+    text-decoration: none;
+    color: white;
+  }
