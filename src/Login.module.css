@@ -31,3 +31,15 @@
     background-color: #f0c14b;
     margin-top: 3%;
 }
+
+.Text{
+    text-align: center;
+    font-size: small;
+    margin-top: 15%;
+}
+
+.Google{
+    text-align: center;
+    font-size: middle;
+    margin-top: 5%;
+}

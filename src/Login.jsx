@@ -1,8 +1,10 @@
 import styles from "./Login.module.css";
+import Header from "./Header";
 
 export default function Login() {
   return (
     <>
+      <Header />
       <div className={styles.Container}>
         <div className={styles.LoginLogoWrap}>
           <img
@@ -21,6 +23,13 @@ export default function Login() {
             <h5 style={{ height: "5px" }}>Password</h5>
             <input className={styles.Input} type="password" />
             <button className={styles.Btn}>Sign In </button>
+            <p style={{ fontSize: "smaller" }}>
+              By continuing, you agree to Amazon's Conditions of Use and Privacy
+              Notice.
+            </p>
+            <button className={styles.Btn}>Create your amazon account</button>
+            <p className={styles.Text}>Login With :</p>
+            <p className={styles.Google}>google login</p>
           </div>
         </div>
       </div>

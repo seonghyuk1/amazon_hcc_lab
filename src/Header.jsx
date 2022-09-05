@@ -14,12 +14,13 @@ export default function Header() {
             className={styles.Hamburger}
             style={{ color: "white" }}
           />
-          <img
-            className={styles.HeaderImg}
-            src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-            alt=""
-          />
-
+          <Link to="/" className={styles.Link}>
+            <img
+              className={styles.HeaderImg}
+              src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              alt=""
+            />
+          </Link>
           <input type="search" className={styles.SearchInput} />
           <AiOutlineSearch className={styles.SearchIcon} />
 
