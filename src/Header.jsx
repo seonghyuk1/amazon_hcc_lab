@@ -34,7 +34,7 @@ export default function Header() {
               </Link>
             </div>
             <div className={styles.Next}>
-              <Link to="/" className={styles.Link}>
+              <Link to="/Order" className={styles.Link}>
                 <span className={styles.Title}>Return</span>
                 <span className={styles.SmallTitle}>
                   <b>Orders</b>
