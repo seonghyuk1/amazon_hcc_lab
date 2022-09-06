@@ -14,11 +14,13 @@ export default function Header() {
             className={styles.Hamburger}
             style={{ color: "white" }}
           />
+          <Link to='/' className={styles.Link}>
           <img
             className={styles.HeaderImg}
             src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
             alt=""
           />
+          </Link>
 
           <input type="search" className={styles.SearchInput} />
           <AiOutlineSearch className={styles.SearchIcon} />
@@ -46,13 +48,19 @@ export default function Header() {
                 <b>Prime</b>
               </span>
             </div>
+
+            <Link to="/Profile" className={styles.Link}>
             <div className={styles.Next}>
               <span className={styles.Title}>Your</span>
               <span className={styles.SmallTitle}>
                 <b>Profile</b>
               </span>
             </div>
+            </Link>
+
+            <Link to="/Cart" className={styles.Link}>
             <HiShoppingCart className={styles.Cart} />
+            </Link>
           </div>
         </div>
       </header>
