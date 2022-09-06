@@ -1,4 +1,6 @@
 import styles from "./Header.module.css";
+import Sidebar from "./Sidebar";
+import { useState, useRef, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiShoppingCart } from "react-icons/hi";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -6,6 +8,10 @@ import { RiMapPin2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+    const toggleMenu = () => {
+          document.getElementById('sidebar').style.transform = `translatex(0)`
+          document.getElementById('background').style.transform = `translatex(0)`
+      };
   return (
     <>
       <header className={styles.HeaderWrap}>
@@ -13,7 +19,9 @@ export default function Header() {
           <GiHamburgerMenu
             className={styles.Hamburger}
             style={{ color: "white" }}
+            onClick={()=>toggleMenu()}
           />
+          
           <img
             className={styles.HeaderImg}
             src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -57,6 +65,10 @@ export default function Header() {
         </div>
       </header>
 
+
+        <Sidebar/>
+
+
       <div className={styles.ListContainer}>
         <div className={styles.MapFinWrap}>
           <RiMapPin2Line className={styles.MapFinIcon} />
@@ -98,6 +110,8 @@ export default function Header() {
           />
         </div>
       </div>
+
+
     </>
   );
 }
