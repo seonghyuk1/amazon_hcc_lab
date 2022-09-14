@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
     const toggleMenu = () => {
-          document.getElementById('sidebar').style.transform = `translatex(0)`
-          document.getElementById('background').style.transform = `translatex(0)`
+          document.getElementById('sidebar').style.transform = `translatex(23rem)`
+          document.getElementById('background').style.transform = `translatex(100vw)`
       };
   return (
     <>

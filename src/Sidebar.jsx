@@ -4,8 +4,6 @@ import './Sidebar.css';
 import { CgProfile } from 'react-icons/cg';
 
 export default function Sidebar(props){
-  console.log(props.xPosition)
-  console.log(props.xPosition2)
   return (
     
     <div className='container'>
@@ -91,8 +89,8 @@ export default function Sidebar(props){
 
     </div>
     <div id = 'background' className='background' onClick={()=>{
-              document.getElementById('sidebar').style.transform = `translatex(-23rem)`
-              document.getElementById('background').style.transform = `translatex(-100vw)`
+              document.getElementById('sidebar').style.transform = `translatex(0)`
+              document.getElementById('background').style.transform = `translatex(0)`
             }} style ={{transform:`translatex(${-props.xPosition2}vw)`}}/>
     </div>
   );

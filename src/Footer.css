@@ -1,0 +1,56 @@
+.Footer{
+    color: white;
+    background-color: #232f3e;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.FooterButton{
+    background-color: #37475a;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.FooterButton:focus,
+.FooterButton:hover{
+    background-color: #485769;
+    cursor: pointer;
+}
+
+.FooterText{
+    color: white;
+    display: block;
+    padding: 10px 0;
+    line-height: 19px;
+    font-size: 15px; 
+}
+
+.FooterList{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.FooterComponents{
+    display: flex;
+    padding: 0 10px;
+    line-height: 19px;
+}
+
+.FooterTitle{
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    margin: 6px 0 14px 0;
+    white-space: nowrap;
+}
+
+.FooterComponents > ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .FooterComponents > ul > li {
+    list-style-type: none;
+  }
