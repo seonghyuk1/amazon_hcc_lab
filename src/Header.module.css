@@ -23,6 +23,10 @@
     margin: 2px 1.5% 0 1.5%;
     vertical-align: middle;
   }
+  
+  .HeaderImg:hover{
+    border: 1px solid white;
+  }
 
   .SearchInput{
     width: 55%;
@@ -49,6 +53,7 @@
     font-size: 13px;
   }
 
+
   .SmallTitle{
     display: flex;
   }
@@ -57,6 +62,12 @@
     display: inline-block;
     margin-right: 30px;
     text-align: center;
+    border: 1px solid black;
+    
+  }
+
+  .Next:hover{
+    border: 1px solid white;
   }
 
   .Cart{
@@ -65,8 +76,9 @@
     vertical-align: bottom;
   }
 
-
-
+  .Cart:hover{
+    border: 1px solid white;
+  }
 
   .ListContainer{
     color: white;
@@ -90,6 +102,10 @@
     margin-right: 12%;
   }
 
+  .Place:hover{
+    border: 1px solid white;
+  }
+
   .ListsWrap{
     display: inline-block;
     width: 47%;
@@ -99,6 +115,10 @@
   .List{
     margin-right: 2%;
     font-size: 14px;
+  }
+
+  .List:hover{
+    border: 1px solid white;
   }
 
   .ImgWrap{
