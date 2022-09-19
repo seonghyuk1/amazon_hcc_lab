@@ -18,8 +18,8 @@
   }
 
   .HeaderImg{
-    width:6%;
-    height: 35px;
+    width:7%;
+    object-fit: contain;
     margin: 2px 1.5% 0 1.5%;
     vertical-align: middle;
   }
