@@ -1,5 +1,6 @@
 import styles from "./Order.module.css";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Order() {
   return (
@@ -10,6 +11,7 @@ export default function Order() {
           <h1>Your Orders</h1>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

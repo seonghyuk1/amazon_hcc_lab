@@ -1,5 +1,6 @@
 import styles from "./Login.module.css";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Login() {
   return (
@@ -33,6 +34,7 @@ export default function Login() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
