@@ -51,4 +51,23 @@
 .FooterLi{
     list-style-type: none;
 }
+.Footer__Line {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+  }
+  
+  .Footer__Line-logo {
+    width: 100px;
+    object-fit: contain;
+    margin: 18px 20px 0 20px;
+  }
+  
+  .Footer__Line-message {
+    align-items: center;
+    display: flex;
+    font-size: 120%;
+  }
+  
+
 

@@ -58,6 +58,22 @@ function Footer(){
                         </ul>
                 </div>
             </div>
+        
+        <hr />
+
+        <div className="Footer__Line">
+            <img
+            className="Footer__Line-logo"
+            src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            alt=""
+            />
+            <span className="Footer__Line-message">
+            fake amazon clone developed by &copy;{" "}
+            <a >
+                KHB
+            </a>
+            </span>
+        </div>
         </div>
     )
 }
