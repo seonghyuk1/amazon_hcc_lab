@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+.Profile {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Profile_img {
+    width: 15%;
+    height: 5%;
+    margin: 2% 0 2% 0;
+}
+
+.profile_container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border: 1px solid lightgray;
+}
+
+.profile_container > input {
+    width: 98%;
+    height: 50px;
+    margin-bottom: 4%; 
+    /* margin-left: 5%; */
+    /* border: 2px solid black; */
+}
+
+.profile_container > h1 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.Up_button {
+    background-color: #f0c14b;
+    border : 1px solid;
+    width : 98%;
+    height : 50px;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    border-radius: 2px;
+    border-color: #a88734 #9c7e31 #846a29;
+}
+
+.SearchInput {
+    width: 20%;
+    height: 36px;
+}
