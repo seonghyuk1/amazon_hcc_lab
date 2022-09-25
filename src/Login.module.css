@@ -1,0 +1,46 @@
+.Container{
+    height: 100%;
+    padding: 2% 38% 0 38%;
+    min-height: 100%;
+}
+.LoginLogoWrap{
+    width: 100%;
+}
+
+.LoginLogo{
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+
+.LoginBox{
+    border: 1px solid lightgray;
+    padding: 3%;
+}
+
+.Input{
+    width: 95%;
+    height: 33px;
+    border: 2px solid;
+    margin-top: 0;
+}
+
+.Btn{
+    width: 97%;
+    height: 31px;
+    border: 0.1px solid;
+    background-color: #f0c14b;
+    margin-top: 3%;
+}
+
+.Text{
+    text-align: center;
+    font-size: small;
+    margin-top: 15%;
+}
+
+.Google{
+    text-align: center;
+    font-size: middle;
+    margin-top: 5%;
+}
