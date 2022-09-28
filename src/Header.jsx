@@ -21,19 +21,19 @@ export default function Header() {
             style={{ color: "white" }}
             onClick={()=>toggleMenu()}
           />
-          
-          <img
-            className={styles.HeaderImg}
-            src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-            alt=""
-          />
-
+          <Link to="/" className={styles.Link}>
+            <img
+              className={styles.HeaderImg}
+              src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+              alt=""
+            />
+          </Link>
           <input type="search" className={styles.SearchInput} />
           <AiOutlineSearch className={styles.SearchIcon} />
 
           <div className={styles.Menu}>
             <div className={styles.Next}>
-              <Link to="/" className={styles.Link}>
+              <Link to="/Login" className={styles.Link}>
                 <span className={styles.Title}>Hello, User</span>
                 <span className={styles.SmallTitle}>
                   <b>Sign In</b>
@@ -41,7 +41,7 @@ export default function Header() {
               </Link>
             </div>
             <div className={styles.Next}>
-              <Link to="/" className={styles.Link}>
+              <Link to="/Order" className={styles.Link}>
                 <span className={styles.Title}>Return</span>
                 <span className={styles.SmallTitle}>
                   <b>Orders</b>
@@ -80,27 +80,42 @@ export default function Header() {
           </span>
         </div>
         <div className={styles.ListsWrap}>
-          <span className={styles.List}>
-            <b>All Products</b>
-          </span>
+          <Link to = "/All" className={styles.Link}>
+            <span className={styles.List}>
+              <b>All Products</b>
+            </span>
+          </Link>
+          <Link to = "/Mobile" className={styles.Link}>
           <span className={styles.List}>
             <b>Mobile</b>
           </span>
+          </Link>
+          <Link to = "/All" className={styles.Link}>
           <span className={styles.List}>
             <b>Today's Deal</b>
           </span>
+          </Link>
+          <Link to = "/Prime" className={styles.Link}>
           <span className={styles.List}>
             <b>Prime</b>
           </span>
+          </Link>
+          <Link to = "/Computers" className={styles.Link}>
           <span className={styles.List}>
             <b>Computers</b>
           </span>
+          </Link>
+          <Link to = "/Pantry" className={styles.Link}>
           <span className={styles.List}>
             <b>Pantry</b>
           </span>
+          </Link>
+          <Link to = "/Electronics" className={styles.Link}>
           <span className={styles.List}>
             <b>Electronics</b>
           </span>
+          </Link>
+
         </div>
         <div className={styles.ImgWrap}>
           <img
