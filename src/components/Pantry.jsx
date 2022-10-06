@@ -1,11 +1,11 @@
-import styles from "./AllProduct.module.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import data from "./data"
+import styles from "./Pantry.module.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import data from "../data"
 import Card from "./Card";
 import { useState } from "react";
 
-export default function Computers(){
+export default function Pantry(){
     let[products, 수정] = useState(data)
     return(
         <div className={styles.allpro}>
@@ -15,7 +15,7 @@ export default function Computers(){
                 products.map(function(s,i){
                     return(
 
-                        i>15 && i<20 && (<Card products={s}/>)
+                        i>23 && i<28 && (<Card products={s}/>)
 
                     );
                 })
@@ -26,7 +26,7 @@ export default function Computers(){
                 products.map(function(s,i){
                     return(
 
-                        i>19 && i<24 && (<Card products={s}/>)
+                        i>27 && i<32 && (<Card products={s}/>)
 
                     );
                 })

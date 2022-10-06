@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import App from "./App";
-import AllProduct from "./AllProduct"
-import Mobile from "./Mobile";
-import Prime from "./Prime";
-import Computers from "./Computers";
-import Pantry from "./Pantry";
-import Electronics from "./Electronics";
+import AllProduct from "./components/AllProduct"
+import Mobile from "./components/Mobile";
+import Prime from "./components/Prime";
+import Computers from "./components/Computers";
+import Pantry from "./components/Pantry";
+import Electronics from "./components/Electronics";
 import Login from "./Login";
 import Order from "./Order";
 

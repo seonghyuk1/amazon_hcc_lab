@@ -1,7 +1,7 @@
-import styles from "./AllProduct.module.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import data from "./data"
+import styles from "./Prime.module.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import data from "../data"
 import Card from "./Card";
 import { useState } from "react";
 

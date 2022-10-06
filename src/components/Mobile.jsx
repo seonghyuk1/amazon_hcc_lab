@@ -1,11 +1,11 @@
-import styles from "./AllProduct.module.css";
-import Header from "./Header";
-import Footer from "./Footer";
-import data from "./data"
+import styles from "./Mobile.module.css";
+import Header from "../Header";
+import Footer from "../Footer";
+import data from "../data"
 import Card from "./Card";
 import { useState } from "react";
 
-export default function Electronics(){
+export default function Moblie(){
     let[products, 수정] = useState(data)
     return(
         <div className={styles.allpro}>
@@ -14,9 +14,7 @@ export default function Electronics(){
             {
                 products.map(function(s,i){
                     return(
-
-                        i>31 && i<36 && (<Card products={s}/>)
-
+                        i<4 && (<Card products={s}/>)
                     );
                 })
             }
@@ -26,13 +24,12 @@ export default function Electronics(){
                 products.map(function(s,i){
                     return(
 
-                        i>35 && i<40 && (<Card products={s}/>)
+                        i>3 && i<8 && (<Card products={s}/>)
 
                     );
                 })
             }
             </div>
-
             <Footer/>
         </div>
     );
