@@ -3,7 +3,7 @@ let data=[
       id : 0,
       title : "SAMSUNG Galaxy S21 FE 5G Cell Phone, Factory Unlocked Android Smartphone, 128GB, 120Hz Display Screen, Pro Grade Camera, All Day Intelligent Battery, US Version, Lavender Magnetic Base for PopSocket Phone Grips and iPhone MagSafe Cases, Black",
       grade : 3.5,
-      price : 15.99,
+      price : 20,
       img: "https://m.media-amazon.com/images/I/61UDrA6RtTL._AC_UL480_FMwebp_QL65_.jpg"
     },
   

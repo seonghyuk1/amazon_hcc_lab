@@ -1,10 +1,7 @@
 
-import { GiTabletopPlayers } from 'react-icons/gi';
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../store/cartSlice';
 import styles from "./Card.module.css"
-import Order from "../Order"
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 
 

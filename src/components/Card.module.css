@@ -40,3 +40,6 @@
     width: 16vw;
     height: 25px;
 }
+.button:hover{
+    cursor:pointer;
+}

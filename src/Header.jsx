@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
 import Sidebar from "./Sidebar";
-import { useState, useRef, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiShoppingCart } from "react-icons/hi";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -8,6 +8,7 @@ import { RiMapPin2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  let a = useSelector((state) => { return state.user})
     const toggleMenu = () => {
           document.getElementById('sidebar').style.transform = `translatex(23rem)`
           document.getElementById('background').style.transform = `translatex(100vw)`
@@ -60,7 +61,10 @@ export default function Header() {
                 <b>Profile</b>
               </span>
             </div>
-            <HiShoppingCart className={styles.Cart} />
+            <Link to="/Order" className={styles.Link}>
+              <HiShoppingCart className={styles.Cart} />
+              <a>{a.length}</a>
+            </Link>
           </div>
         </div>
       </header>

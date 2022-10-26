@@ -4,8 +4,6 @@ import './Sidebar.css';
 import { CgProfile } from 'react-icons/cg';
 
 export default function Sidebar(props){
-  return (
-    
     <div className='container'>
     <div id = 'sidebar' className='sidebar' style ={{transform:`translatex(${-props.xPosition}rem)`}}> 
         <div className="customer_info">
@@ -93,5 +91,4 @@ export default function Sidebar(props){
               document.getElementById('background').style.transform = `translatex(0)`
             }} style ={{transform:`translatex(${-props.xPosition2}vw)`}}/>
     </div>
-  );
 };
