@@ -1,4 +1,6 @@
 import styles from "./Header.module.css";
+import Sidebar from "./Sidebar";
+import { useDispatch, useSelector } from "react-redux";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { HiShoppingCart } from "react-icons/hi";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -6,6 +8,13 @@ import { RiMapPin2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  let a = useSelector((state) => {
+    return state.user;
+  });
+  const toggleMenu = () => {
+    document.getElementById("sidebar").style.transform = `translatex(23rem)`;
+    document.getElementById("background").style.transform = `translatex(100vw)`;
+  };
   return (
     <>
       <header className={styles.HeaderWrap}>
@@ -13,6 +22,7 @@ export default function Header() {
           <GiHamburgerMenu
             className={styles.Hamburger}
             style={{ color: "white" }}
+            onClick={() => toggleMenu()}
           />
 
           <Link to="/" className={styles.Link}>
@@ -58,12 +68,17 @@ export default function Header() {
               </div>
             </Link>
 
-            <Link to="/Cart" className={styles.Link}>
+
+            <Link to="/Order" className={styles.Link}>
               <HiShoppingCart className={styles.Cart} />
+              <a>{a.length}</a>
+
             </Link>
           </div>
         </div>
       </header>
+
+      <Sidebar />
 
       <div className={styles.ListContainer}>
         <div className={styles.MapFinWrap}>
@@ -76,29 +91,44 @@ export default function Header() {
           </span>
         </div>
         <div className={styles.ListsWrap}>
-          <span className={styles.List}>
-            <b>All Products</b>
-          </span>
-          <span className={styles.List}>
-            <b>Mobile</b>
-          </span>
-          <span className={styles.List}>
-            <Link to="/Deal" className={styles.Link}>
+
+
+          <Link to="/All" className={styles.Link}>
+            <span className={styles.List}>
+              <b>All Products</b>
+            </span>
+          </Link>
+          <Link to="/Mobile" className={styles.Link}>
+            <span className={styles.List}>
+              <b>Mobile</b>
+            </span>
+          </Link>
+          <Link to="/Deal" className={styles.Link}>
+            <span className={styles.List}>
               <b>Today's Deal</b>
-            </Link>
-          </span>
-          <span className={styles.List}>
-            <b>Prime</b>
-          </span>
-          <span className={styles.List}>
-            <b>Computers</b>
-          </span>
-          <span className={styles.List}>
-            <b>Pantry</b>
-          </span>
-          <span className={styles.List}>
-            <b>Electronics</b>
-          </span>
+            </span>
+          </Link>
+          <Link to="/Prime" className={styles.Link}>
+            <span className={styles.List}>
+              <b>Prime</b>
+            </span>
+          </Link>
+          <Link to="/Computers" className={styles.Link}>
+            <span className={styles.List}>
+              <b>Computers</b>
+            </span>
+          </Link>
+          <Link to="/Pantry" className={styles.Link}>
+            <span className={styles.List}>
+              <b>Pantry</b>
+            </span>
+          </Link>
+          <Link to="/Electronics" className={styles.Link}>
+            <span className={styles.List}>
+              <b>Electronics</b>
+            </span>
+          </Link>
+
         </div>
         <div className={styles.ImgWrap}>
           <img
