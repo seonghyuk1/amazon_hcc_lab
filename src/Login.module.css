@@ -1,6 +1,7 @@
 .Container{
     height: 100%;
     padding: 2% 38% 0 38%;
+    min-height: 100%;
 }
 .LoginLogoWrap{
     width: 100%;

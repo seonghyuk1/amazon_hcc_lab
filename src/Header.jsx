@@ -22,7 +22,8 @@ export default function Header() {
             style={{ color: "white" }}
             onClick={()=>toggleMenu()}
           />
-          <Link to="/" className={styles.Link}>
+
+ <Link to="/" className={styles.Link}>
             <img
               className={styles.HeaderImg}
               src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -55,15 +56,24 @@ export default function Header() {
                 <b>Prime</b>
               </span>
             </div>
+
+            <Link to="/Profile" className={styles.Link}>
             <div className={styles.Next}>
               <span className={styles.Title}>Your</span>
               <span className={styles.SmallTitle}>
                 <b>Profile</b>
               </span>
             </div>
+
             <Link to="/Order" className={styles.Link}>
               <HiShoppingCart className={styles.Cart} />
               <a>{a.length}</a>
+
+            </Link>
+
+            <Link to="/Cart" className={styles.Link}>
+            <HiShoppingCart className={styles.Cart} />
+
             </Link>
           </div>
         </div>

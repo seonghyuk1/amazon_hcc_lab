@@ -1,52 +1,20 @@
+/* eslint-disable */
 import Header from "./Header";
-import Footer from "./Footer"
+
+
 import Sidebar from "./Sidebar"
+import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
+import Profile from "./Profile/Profile";
+import Cart from "./Cart/Cart";
+import Footer from "./Footer";
 
 function App() {
 
   return (
     <>
       <Header />
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
-      <div/>
+
+      <div style={{ height: "1000px" }}></div>
       <Footer />
     </>
   );

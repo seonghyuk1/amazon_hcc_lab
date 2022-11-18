@@ -1,5 +1,6 @@
 import styles from "./Order.module.css";
 import Header from "./Header";
+
 import { useDispatch, useSelector } from "react-redux"
 import { RiStarFill, RiStarHalfFill, RiStarLine } from "react-icons/ri";
 import { deleteItem } from "./store/cartSlice";
@@ -10,6 +11,9 @@ export default function Order(props) {
   let dispatch = useDispatch()
   let sum  = 0
   console.log(a.length)
+
+import Footer from "./Footer";
+
 
   return (
     <>
@@ -90,6 +94,7 @@ export default function Order(props) {
                 }
                 
       </div>
+      <Footer />
     </>
   );
 }
