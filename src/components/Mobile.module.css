@@ -1,0 +1,11 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  
+.allpro{
+    background-color: rgba(0,0,0,0.05);
+}
