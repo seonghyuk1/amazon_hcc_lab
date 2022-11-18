@@ -4,6 +4,7 @@ import Login from "./Login";
 import Order from "./Order";
 import Profile from "./Profile/Profile";
 import Cart from "./Cart/Cart";
+import Deal from "./Deal";
 
 export default function Router() {
   return (
@@ -13,6 +14,7 @@ export default function Router() {
       <Route path="/Order" exact element={<Order />}></Route>
       <Route path="/Profile" element={<Profile />} />
       <Route path="/Cart" element={<Cart />} />
+      <Route path="/Deal" element={<Deal />} />
     </Routes>
   );
 }

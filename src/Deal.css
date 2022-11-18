@@ -1,0 +1,40 @@
+
+
+.Img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+
+}
+
+
+
+.slick-prev {
+    z-index: 9999;
+    left: -5%;
+    width: 100px;
+    height: 200px;
+    margin-right: 4%;
+    font-size: larger;
+}
+
+.slick-next{
+
+    z-index: 9999;
+    display: block;
+    margin-right: 8%;
+}
+
+  .Container{
+    background-color: antiquewhite;
+    height: 500px;
+    padding: 4%;
+  }
+
+.slick-dots{
+    bottom: -100px;
+    left: -4%;
+}
