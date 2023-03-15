@@ -1,0 +1,183 @@
+span {
+  text-align: center;
+}
+
+.home_image_container > .home_image > img {
+  width: 1500px;
+  height: 600px;
+}
+
+.Home_background {
+  background-color: rgb(226, 226, 226);
+}
+
+.home_image_container {
+  width: 100%;
+  margin: 0, auto;
+  height: 40vh;
+  transition: all 1s ease-in-out;
+}
+
+.home_image {
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 0;
+  margin-bottom: -300px;
+}
+
+.item_container {
+  z-index: 1;
+
+  /* margin collaps 방지 */
+  /* margin-left: 5px; */
+  /* margin-right: 5px; */
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item_row {
+  background-color: white;
+  /* min-width: 100px; */
+  margin: 1%;
+  /* padding: 20px; */
+  padding: 1%;
+  width: 28%;
+  height: 350px;
+  /* max-height: 300px; */
+  z-index: 2;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item_row > img {
+  height: 150px;
+  transition: all 0.7s;
+}
+
+.item_row > img:hover {
+  transform: scale(1.07);
+}
+
+.item_row > span {
+  margin: 4% 4%;
+}
+
+.item_price {
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 4%;
+}
+
+.item_rating {
+  color: #f0c14b;
+  display: flex;
+  margin-top: 3%;
+  padding-left: 5%;
+}
+
+.item_button {
+  background-color: #f0c14b;
+  border: 1px solid black;
+  width: 90%;
+  /* height: 10%; */
+  height: 30px;
+}
+
+.item_button:hover {
+  opacity: 0.7;
+}
+
+.item_row2 {
+  background-color: white;
+  /* min-width: 100px; */
+  margin: 1%;
+  /* padding: 23px; */
+  padding: 2%;
+  width: 90%;
+  height: 350px;
+  z-index: 2;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item_row2 > img {
+  max-height: 45%;
+  width: 25%;
+  transition: all 0.7s;
+  margin-bottom: 4%;
+}
+
+.item_row2 > img:hover {
+  transform: scale(1.07);
+}
+
+.item_price2 {
+  display: flex;
+  font-size: 25px;
+  margin: 1%;
+}
+
+.item_container_nowrap {
+  z-index: 1;
+
+  /* margin collaps 방지 */
+  /* margin-left: 5px; */
+  /* margin-right: 5px; */
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item_container_nowrap > div {
+  width: 18%;
+  margin-bottom: 2%;
+}
+
+.item_row3 {
+  background-color: white;
+  /* min-width: 100px; */
+  margin: 1%;
+  /* padding: 23px; */
+  padding: 2%;
+  width: 90%;
+  height: 350px;
+  z-index: 2;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item_row3 > img {
+  max-height: 60%;
+  width: 50%;
+  transition: all 0.7s;
+  margin-bottom: 4%;
+}
+
+.item_row3 > img:hover {
+  transform: scale(1.07);
+}
+
+/* .item_row3 {
+
+     <--위에 구문과 차이점이 발생 why?-->
+    - 가리키는 건 똑같은데 
+
+    width: 20%;
+    margin-bottom : 2%
+} */
